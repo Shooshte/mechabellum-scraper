@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mechabellum_scraper
+Version: 0.1.dev1+g6f20d5d.d20240802
+Requires-Python: >=3.8
+Provides-Extra: lint
+Requires-Dist: mypy; extra == "lint"
+Requires-Dist: pytest; extra == "lint"
+Requires-Dist: ruff; extra == "lint"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: coverage[toml]; extra == "test"
+Provides-Extra: doc
+Requires-Dist: sphinx; extra == "doc"
+Provides-Extra: build
+Requires-Dist: build[virtualenv]; extra == "build"
+Provides-Extra: dev
+Requires-Dist: tox; extra == "dev"
+Requires-Dist: mechabellum_scraper[lint]; extra == "dev"
+Requires-Dist: mechabellum_scraper[test]; extra == "dev"
+Requires-Dist: mechabellum_scraper[doc]; extra == "dev"
+Requires-Dist: mechabellum_scraper[build]; extra == "dev"

@@ -1,0 +1,9 @@
+.gitignore
+pyproject.toml
+src/example.py
+src/mechabellum_scraper.egg-info/PKG-INFO
+src/mechabellum_scraper.egg-info/SOURCES.txt
+src/mechabellum_scraper.egg-info/dependency_links.txt
+src/mechabellum_scraper.egg-info/requires.txt
+src/mechabellum_scraper.egg-info/top_level.txt
+tests/test_example.py

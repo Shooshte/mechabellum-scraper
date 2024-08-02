@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites tests="1" failures="0" errors="1" skipped="0" time="0.0"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.0" timestamp="2024-08-02T13:17:55.151913+02:00" hostname="Mihas-MacBook-Pro.local"><testcase classname="" name="tests.test_example" time="0.000"><error message="collection failure">ImportError while importing test module '/Users/shooshte/Work/PersonalProjects/mechabellum-scraper/tests/test_example.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/test_example.py:3: in &lt;module&gt;
+    from mechabellum_scraper.example import my_function
+E   ModuleNotFoundError: No module named 'mechabellum_scraper'</error></testcase></testsuite></testsuites>
