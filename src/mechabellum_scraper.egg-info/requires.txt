@@ -1,13 +1,15 @@
+bs4
+requests
 
 [build]
 build[virtualenv]
 
 [dev]
 tox
-mechabellum_scraper[lint]
-mechabellum_scraper[test]
-mechabellum_scraper[doc]
-mechabellum_scraper[build]
+mechabellum-scraper[lint]
+mechabellum-scraper[test]
+mechabellum-scraper[doc]
+mechabellum-scraper[build]
 
 [doc]
 sphinx

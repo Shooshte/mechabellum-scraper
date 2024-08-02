@@ -3,11 +3,12 @@ requires = ["setuptools>=68", "setuptools_scm[toml]>=8"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mechabellum_scraper"
+name = "mechabellum-scraper"
 requires-python = ">=3.8"
 dynamic = ["version"]
 dependencies = [
-    # Add runtime dependencies here
+    "bs4",
+    "requests"
 ]
 
 [project.optional-dependencies]
@@ -29,10 +30,10 @@ build = [
 ]
 dev = [
     "tox",
-    "mechabellum_scraper[lint]",
-    "mechabellum_scraper[test]",
-    "mechabellum_scraper[doc]",
-    "mechabellum_scraper[build]",
+    "mechabellum-scraper[lint]",
+    "mechabellum-scraper[test]",
+    "mechabellum-scraper[doc]",
+    "mechabellum-scraper[build]",
 ]
 
 # Enables the usage of setuptools_scm
@@ -80,7 +81,7 @@ convention = "google"
 disallow_untyped_defs = true # Functions need to be annotated
 warn_unused_ignores = true
 exclude = [
-    "mechabellum_scraper-\\d+", # Ignore temporary folder created by setuptools when building an sdist
+    "mechabellum-scraper-\\d+", # Ignore temporary folder created by setuptools when building an sdist
     "venv.*/",
     "build/",
     "dist/",
@@ -89,7 +90,7 @@ exclude = [
 [tool.pytest.ini_options]
 addopts = """
     --import-mode=append
-    --cov=my_project
+    --cov=mechabellum_scraper
     --cov-config=pyproject.toml
     --cov-report=
     """

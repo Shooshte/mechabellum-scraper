@@ -1,6 +1,6 @@
 """This module contains example tests."""
 
-from mechabellum_scraper.example import my_function
+from mechabellum_scraper import my_function
 
 
 def test_my_function() -> None:
